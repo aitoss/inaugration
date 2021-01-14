@@ -10,9 +10,9 @@ body {
   overflow-x: hidden;
   overflow-y: hidden;
 }
-.root{
-    align-items: center;
-    margin: 0;
+.root {
+  align-items: center;
+  margin: 0;
 }
 
 #starter {
@@ -21,57 +21,55 @@ body {
   width: 100%;
   height: 100%;
   text-align: center;
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-size: 2em;
   font-weight: 600;
   cursor: pointer;
   overflow: hidden;
-  
 }
-#starter .ribbon img{
-    overflow: hidden;
-    transform: scale(0.92);
-    margin-left: -2%;
+#starter .ribbon img {
+  overflow: hidden;
+  transform: scale(0.92);
+  margin-left: -2%;
 }
-#starter .content{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    
+#starter .content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
 }
-.center-image{
+.center-image {
   width: 100%;
   margin: 0;
   display: inline-block;
 }
-.content .logo{
-    width: 27%;
-    height: 27%;
-    border-radius: 50%;
+.content .logo {
+  width: 27%;
+  height: 27%;
+  border-radius: 50%;
 }
 
-.warning{
+.warning {
   display: none;
 }
 
-.highlight{
-    color: #394677;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 30px;
-    font-weight: 600;
-    text-shadow: 1px;
-    text-align: center;
-    text-decoration: none;
-  }
-  
-  .highlightred{
-    color: #EE6464;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 35px;
-    font-weight: 600;
-    text-shadow: 1px;
-  }
+.highlight {
+  color: #394677;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  text-shadow: 1px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.highlightred {
+  color: #ee6464;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 35px;
+  font-weight: 600;
+  text-shadow: 1px;
+}
 
 #scene {
   position: fixed;
@@ -82,7 +80,7 @@ body {
   overflow: hidden;
   margin-top: -300px;
   margin-left: -600px;
-  background-color: rgb(0,0,0);
+  background-color: rgb(0, 0, 0);
   box-shadow: 0 0 0 2px white inset;
 }
 #curtain {
@@ -127,7 +125,7 @@ body {
 
 h1 {
   position: absolute;
-  left: 40%;
+  left: 42%;
   top: 50%;
   display: block;
   width: 500px;
@@ -135,7 +133,7 @@ h1 {
   margin-top: -90px;
   margin-left: -250px;
   text-align: center;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 10em;
   color: white;
   transform: scale(0.75);
@@ -150,7 +148,7 @@ h1 {
   width: 140%;
   left: -20%;
   margin-left: 0;
-  background-color: rgb(32,32,32);
+  background-color: rgb(32, 32, 32);
   box-shadow: 0 0 0 0 white inset;
   animation-fill-mode: forwards;
   animation-name: expand-scene-horizontaly, expand-scene-verticaly;
@@ -218,26 +216,28 @@ h1 {
   animations
 ********** */
 
-@keyframes expand-scene-horizontaly { /* 2.5
+@keyframes expand-scene-horizontaly {
+  /* 2.5
   s */
-  from {  
+  from {
     width: 1200px;
     left: 50%;
     margin-left: -600px;
-    background-color: rgb(0,0,0);
+    background-color: rgb(0, 0, 0);
     box-shadow: 0 0 0 2px white inset;
   }
   to {
     width: 140%;
     left: -20%;
     margin-left: 0;
-    background-color: rgb(32,32,32);
+    background-color: rgb(32, 32, 32);
     box-shadow: 0 0 0 0 white inset;
   }
 }
 
-@keyframes expand-scene-verticaly { /* 1.5s */
-  from {  
+@keyframes expand-scene-verticaly {
+  /* 1.5s */
+  from {
     top: 50%;
     height: 600px;
     margin-top: -300px;
@@ -249,63 +249,97 @@ h1 {
   }
 }
 
-@keyframes curtain-opening { /* 2s */
-  from { filter: brightness(180%); }
-  to { filter: brightness(100%); }
+@keyframes curtain-opening {
+  /* 2s */
+  from {
+    filter: brightness(180%);
+  }
+  to {
+    filter: brightness(100%);
+  }
 }
 
-@keyframes left-curtain-opening { /* 4s */ 
-  from { transform: translate(0) rotate(0) scale(1,1); }
-  to { transform: translate(-100%) rotate(20deg) scale(0,2); }
+@keyframes left-curtain-opening {
+  /* 4s */
+  from {
+    transform: translate(0) rotate(0) scale(1, 1);
+  }
+  to {
+    transform: translate(-100%) rotate(20deg) scale(0, 2);
+  }
 }
 
-@keyframes right-curtain-opening { /* 4s */
-  from { transform: translate(0) rotate(0) scale(1,1); }
-  to { transform: translate(100%) rotate(-20deg) scale(0,2); }
+@keyframes right-curtain-opening {
+  /* 4s */
+  from {
+    transform: translate(0) rotate(0) scale(1, 1);
+  }
+  to {
+    transform: translate(100%) rotate(-20deg) scale(0, 2);
+  }
 }
 
 @keyframes ground-rising {
-  from { top: 133%; }
-  to { top: 105%; }
+  from {
+    top: 133%;
+  }
+  to {
+    top: 105%;
+  }
 }
 
 @keyframes text-zoom {
-  from { transform: scale(0.75); }
-  to { transform: scale(1); }
+  from {
+    transform: scale(0.75);
+  }
+  to {
+    transform: scale(1);
+  }
 }
 
 @keyframes text-fade-in {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes text-glowing {
-  from { text-shadow: 0 0 10px white; }
-  to { text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px dodgerblue; }
+  from {
+    text-shadow: 0 0 10px white;
+  }
+  to {
+    text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px dodgerblue;
+  }
 }
 
 @keyframes fade-out {
-  from { color: black; opacity: 1; }
-  to { color: white; opacity: 0; }
+  from {
+    color: black;
+    opacity: 1;
+  }
+  to {
+    color: white;
+    opacity: 0;
+  }
 }
 
-
-
-@media (max-width: 420px){
-    #starter{
-      display: none;
-    }
-    .warning{
-        color: red;
-        position: relative;
-        z-index: 2;
-        align-items: center;
-        display: inline;
-        display: flex;
-        justify-content: center;
-        margin-top: 50%;
-        text-align: center;
-        align-items: center;
-    }
+@media (max-width: 420px) {
+  #starter {
+    display: none;
+  }
+  .warning {
+    color: red;
+    position: relative;
+    z-index: 2;
+    align-items: center;
+    display: inline;
+    display: flex;
+    justify-content: center;
+    margin-top: 50%;
+    text-align: center;
+    align-items: center;
+  }
 }
-

@@ -22,5 +22,11 @@ function showTime()
 	
 	setTimeout(function() {
         starter.style.display = 'none';
-    }, 2000);
+	}, 2000);
+	
+	setTimeout(function() {
+		window.open('https://aitoss.club', '_blank');
+	window.open('https://anubhav.aitoss.club', '_blank');
+   
+ }, 8000);
 }
