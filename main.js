@@ -4,7 +4,7 @@ document.addEventListener('keydown', detectSpaceKey);
 
 function detectSpaceKey(event)
 {
-	if(event.keyCode == 13) {
+    if(event.keyCode == 13) {
 		showTime();
 	}
 }
@@ -23,10 +23,4 @@ function showTime()
 	setTimeout(function() {
         starter.style.display = 'none';
     }, 2000);
-  
-  	setTimeout(function() {
-           window.open('https://aitoss.club', '_blank');
-       window.open('https://anubhav.aitoss.club', '_blank');
-      
-    }, 6000);
-};
+}
